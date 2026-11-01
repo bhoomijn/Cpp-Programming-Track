@@ -1,5 +1,6 @@
 # C++ HackerRank Solutions 🚀
 
+
 [![C++](https://img.shields.io/badge/C%2B%2B-17-blue.svg)](https://isocpp.org/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![HackerRank](https://img.shields.io/badge/HackerRank-Solver-brightgreen.svg)](https://www.hackerrank.com/)
