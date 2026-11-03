@@ -1,1 +1,48 @@
 
+#include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+int main() {
+    // Creating a vector
+    vector<int> v = {10, 20, 30, 40, 50};
+
+    cout << "Vector elements: ";
+    for (int i = 0; i < v.size(); i++) {
+        cout << v[i] << " ";
+    }
+
+    // Adding an element
+    v.push_back(60);
+
+    // Removing the last element
+    v.pop_back();
+
+    cout << "\nAfter push_back and pop_back: ";
+    for (int x : v) {
+        cout << x << " ";
+    }
+
+    cout << "\nSize: " << v.size() << endl;
+    cout << "First element: " << v.front() << endl;
+    cout << "Last element: " << v.back() << endl;
+
+    // Sum of elements
+    int sum = 0;
+    for (int x : v) {
+        sum += x;
+    }
+    cout << "Sum: " << sum << endl;
+
+    // Sorting in ascending order
+    sort(v.begin(), v.end());
+
+    cout << "Sorted vector: ";
+    for (int x : v) {
+        cout << x << " ";
+    }
+
+    cout << endl;
+    return 0;
+}
