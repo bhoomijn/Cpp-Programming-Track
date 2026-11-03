@@ -1,0 +1,31 @@
+
+#include <iostream>
+#include <utility>
+using namespace std;
+
+int main() {
+    // Creating a pair
+    pair<string, int> student = {"Bhoomi", 92};
+
+    cout << "Name: " << student.first << endl;
+    cout << "Marks: " << student.second << endl;
+
+    // Array of pairs
+    pair<int, int> p[2];
+
+    p[0] = {10, 20};
+    p[1] = {30, 40};
+
+    cout << "\nBefore swapping:\n";
+    cout << p[0].first << " " << p[0].second << endl;
+    cout << p[1].first << " " << p[1].second << endl;
+
+    // Swapping pairs
+    swap(p[0], p[1]);
+
+    cout << "\nAfter swapping:\n";
+    cout << p[0].first << " " << p[0].second << endl;
+    cout << p[1].first << " " << p[1].second << endl;
+
+    return 0;
+}
